@@ -1,13 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container } from "./style";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Container, Body } from "./style";
+import Sidebar from "../components/Sidebar";
 
 export const Root = () => {
   return (
-    <Container>
-      <h1>Navbar</h1>
-      <h1>Body</h1>
-    </Container>
+    <Router>
+      <Container>
+        <Sidebar />
+        <Body>Body</Body>
+      </Container>
+    </Router>
   );
 };
 
