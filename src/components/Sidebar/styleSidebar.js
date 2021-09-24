@@ -6,8 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: 300px;
   height: 100vh;
-  border: 1px solid red;
-  padding: 30px 0;
+  padding-top: 30px;
 `;
 
 export const Header = styled.div`
@@ -27,8 +26,8 @@ Header.Logo = styled.img`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  padding-right: 24px;
+  /* border-left: ${({ left }) => left && "4px solid #FCB600"}; */
 `;
 
 Wrapper.Title = styled.div`
@@ -49,22 +48,45 @@ Wrapper.Description = styled.div`
 
 export const Link = styled(NavLink)`
   display: flex;
+  align-items: center;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   width: 100%;
-  margin-bottom: 20px;
-  padding-left: 40px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 10px 40px;
   line-height: 18px;
   color: #2d3a45;
+  border-radius: 0px 6px 6px 0px;
+  transition: all 0.3s;
 `;
 
 export const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 36px;
   height: 36px;
   background: #f6f6f6;
   border-radius: 6px;
+  margin-right: 10px;
 `;
 
+export const activeStyle = {
+  background: "#fcb600",
+  color: "#fff"
+};
+
+export const Logout = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d3a45;
+  cursor: pointer;
+`;

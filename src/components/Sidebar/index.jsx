@@ -1,7 +1,16 @@
 import React from "react";
-import { Container, Header, Wrapper, Link, IconWrapper } from "./styleSidebar";
+import {
+  Container,
+  Header,
+  Wrapper,
+  Link,
+  IconWrapper,
+  activeStyle,
+  Logout
+} from "./styleSidebar";
 import logo from "../../assets/img/loginPage/login.png";
 import { sidebar } from "../../utils/sidebar";
+import { ReactComponent as Chiqish } from "../../assets/icons/Buyurtmalar/chiqish.svg";
 
 export const Sidebar = () => {
   return (
@@ -13,16 +22,21 @@ export const Sidebar = () => {
           <Wrapper.Description>Online maxsulot sotuvi</Wrapper.Description>
         </Wrapper>
       </Header>
-      <Wrapper>
+      <Wrapper left>
         {sidebar.map(({ title, Icon, path }) => (
-          <Link to={path}>
-            {" "}
+          <Link activeStyle={activeStyle} to={path}>
             <IconWrapper>
               <Icon />
-            </IconWrapper>{" "}
+            </IconWrapper>
             {title}
           </Link>
         ))}
+        <Logout>
+          <IconWrapper>
+            <Chiqish />
+          </IconWrapper>
+          Chiqish
+        </Logout>
       </Wrapper>
     </Container>
   );
