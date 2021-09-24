@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid green;
+}
+
+.col-2 {
+  border: 1px solid red;
+  background-color: rgb(148, 40, 40);
+  color: white;
+}
