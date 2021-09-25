@@ -12,6 +12,8 @@ import { ReactComponent as bildirishnoma } from "../assets/icons/Buyurtmalar/bil
 import { ReactComponent as yetkazishNarxi } from "../assets/icons/Buyurtmalar/yetkazish.svg";
 import { ReactComponent as shikoyatlar } from "../assets/icons/Buyurtmalar/shikoyatlar.svg";
 import { ReactComponent as xarita } from "../assets/icons/Buyurtmalar/xarita.svg";
+import Generic from "../pages/Generic";
+import Buyurtmalar from "../pages/Buyurtmalar";
 
 export const sidebar = [
   {
@@ -19,7 +21,7 @@ export const sidebar = [
     title: "Buyurtmalar",
     path: "/buyurtmalar",
     Icon: buyurtmalar,
-    Component: "",
+    Component: Buyurtmalar,
     hidden: false
   },
   {
@@ -27,7 +29,7 @@ export const sidebar = [
     title: "Maxsulotlar",
     path: "/maxsulotlar",
     Icon: maxsulotlar,
-    Component: "",
+    Component: Generic,
     hidden: false
   },
   {
@@ -35,15 +37,15 @@ export const sidebar = [
     title: "Kategoriyalar",
     path: "/kategoriyalar",
     Icon: kategoriyalar,
-    Component: "",
+    Component: Generic,
     hidden: false
   },
   {
     id: 4,
     title: "Filiallar",
-    path: "filiallar",
+    path: "/filiallar",
     Icon: filiallar,
-    Component: "",
+    Component: Generic,
     hidden: false
   },
   {
@@ -51,7 +53,7 @@ export const sidebar = [
     title: "Mijozlar",
     path: "/mijozlar",
     Icon: mijozlar,
-    Component: "",
+    Component: Generic,
     hidden: false
   },
   {
@@ -59,7 +61,7 @@ export const sidebar = [
     title: "Xisobot",
     path: "/xisobot",
     Icon: xisobot,
-    Component: "",
+    Component: Generic,
     hidden: false
   },
   {
@@ -67,7 +69,7 @@ export const sidebar = [
     title: "Xodimlar",
     path: "/xodimlar",
     Icon: xodimlar,
-    Component: "",
+    Component: Generic,
     hidden: false
   },
   {
@@ -75,7 +77,7 @@ export const sidebar = [
     title: "Katalog",
     path: "/katalog",
     Icon: katalog,
-    Component: "",
+    Component: Generic,
     hidden: false
   }
   // {
